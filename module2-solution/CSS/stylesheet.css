@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;	
+	font-family: Arial;
+}
+
+header {
+
+	text-align: center;
+	font-size: 175%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+section {
+	position: relative;
+	margin-bottom: 16px;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 1px solid black;
+	border-top-right-radius: 5px;
+	width: 28%;
+	background-color: white;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+}
+
+p {	
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #B8D0E1;
+	margin: 0px;
+	padding: 35px 10px 10px 10px;
+}
+
+#dog {
+	background-color: #F2A442;
+	font-size: 125%;
+}
+
+#cat {
+	background-color: #688d59;
+	font-size: 125%;
+}
+
+#monkey {
+	background-color: #d64242;
+	font-size: 125%;
+}
+
+.row {
+	position: relative;
+	width: 100%;
+	border:none;
+}
+
+/********** Desktop version **********/
+
+@media (min-width: 	992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/********** Tablet version **********/
+
+@media (min-width: 	768px) and (max-width: 991px) {
+	.col-md-6, .col-md-12 {
+		float: left;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	.col-md-12 {
+		width: 100%;
+	}
+}	
+
+/********** Mobile version **********/
+
+/* In this case each section will stack over the other one automatically 
+because of the block nature of this elements and because there is no clase associated 
+with this display size (they will take 100% width for a dislplay lesser than 768px) */
